@@ -1,0 +1,232 @@
+/* 초기 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* 헤더 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0c2340;
+  color: white;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.logo span {
+  color: #00aaff;
+}
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+.user-menu a {
+  color: #ccc;
+  margin-left: 10px;
+}
+
+/* 배너 */
+.main-banner {
+  background: #ddd;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.main-banner h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.main-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 강좌 */
+.courses {
+  padding: 40px;
+  background: #f9f9f9;
+}
+.courses h2 {
+  margin-bottom: 20px;
+}
+.course-list {
+  display: flex;
+  gap: 20px;
+}
+.course-card {
+  font-weight: bold;
+  font-size: 24px;
+  flex: 1;
+  display: block;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s;
+}
+.course-card:hover {
+  background: #e0f7ff;
+  cursor: pointer;
+}
+
+/* 공지 & 이벤트 */
+.notice-event {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+.notice, .event {
+  flex: 1;
+  margin: 0 20px;
+}
+.notice h2, .event h2 {
+  margin-bottom: 10px;
+}
+.notice ul, .event ul {
+  list-style: none;
+}
+.notice a, .event a {
+  text-decoration: none;
+  color: #333;
+}
+.notice a:hover, .event a:hover {
+  color: #00aaff;
+}
+
+/* 푸터 */
+footer {
+  display: flex;                 /* 가로 배치 */
+  justify-content: space-between;/* 좌: 텍스트 / 우: 아이콘 */
+  align-items: center;           /* 세로 가운데 정렬 */
+  padding: 20px;
+  background: #333;
+  color: white;
+  font-size: 14px;
+}
+
+/* 공통 강좌/로그인 숨김 */
+.course-detail {
+  display: none;
+  padding: 40px;
+  background: #f9f9f9;
+}
+.course-detail.active {
+  display: block;
+}
+
+/* 로그인 */
+.login-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #0c2340;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-container button:hover {
+  background: #005999;
+}
+.login-container a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  text-decoration: none;
+}
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* 소셜 아이콘 */
+.social-icons {
+  position: static; /* fixed → static, footer 안의 흐름에 맞게 */
+  display: flex;
+  gap: 12px;
+}
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.social-icons img:hover {
+  opacity: 1;
+}
+
+/* 왼쪽 고정 사이드 아이콘 */
+.side-menu {
+  position: fixed;
+  top: 120px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  background: white;
+  border-right: 1px solid #ddd;
+  z-index: 1000;
+}
+.side-menu img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.side-menu img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>MegaStudy Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top"></div>
+
+  <div class="page-container">
+    <!-- 헤더 -->
+    <header>
+      <a href="#main" class="logo"><span>FAKE</span>MEGA<span>STUDY</span></a>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="javascript:void(0)">강좌</a></li>
+          <li><a href="javascript:void(0)">선생님</a></li>
+          <li><a href="javascript:void(0)">모의고사</a></li>
+          <li><a href="javascript:void(0)">이벤트</a></li>
+          <li><a href="javascript:void(0)">고객센터</a></li>
+        </ul>
+      </nav>
+      <div class="user-menu">
+        <a href="#login">로그인</a>
+        <a href="javascript:void(0)">회원가입</a>
+      </div>
+      <!-- 로그인 폼 수정 -->
+      <section id="login-section" class="course-detail">
+        <div class="main-banner">
+          <h1>로그인</h1>
+        </div>
+        <div class="login-container">
+          <form id="login-form">
+            <input type="text" id="login-id" placeholder="아이디" required />
+            <input type="password" id="login-password" placeholder="비밀번호" required />
+            <button type="submit">로그인</button>
+          </form>
+          <a href="#main">← 메인으로 돌아가기</a>
+        </div>
+      </section>
+
+    </header>
+    <!-- 메인 -->
+    <main>
+      <!-- 메인 배너 -->
+      <section id="main-banner" class="main-banner">
+        <h1>메가스터디 클론에 오신 것을 환영합니다!</h1>
+        <img src="images/mainImage.png" class="main-image" />
+      </section>
+
+      <!-- 추천 강좌 -->
+      <section id="main-courses" class="courses">
+        <h2>추천 강좌</h2>
+        <div class="course-list">
+          <a href="#math" class="course-card">수학</a>
+          <a href="#english" class="course-card">영어</a>
+          <a href="#history" class="course-card">역사</a>
+        </div>
+      </section>
+
+      <!-- 공지사항 & 이벤트 -->
+      <section id="main-notice" class="notice-event">
+        <div class="notice">
+          <h2>공지사항</h2>
+          <ul>
+            <li><a href="#">공지 1</a></li>
+            <li><a href="#">공지 2</a></li>
+            <li><a href="#">공지 3</a></li>
+          </ul>
+        </div>
+        <div class="event">
+          <h2>이벤트</h2>
+          <ul>
+            <li><a href="#">이벤트 1</a></li>
+            <li><a href="#">이벤트 2</a></li>
+            <li><a href="#">이벤트 3</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 수학 -->
+      <section id="course-math" class="course-detail">
+        <div class="main-banner">
+          <h1>수학의 정석 완전정복</h1>
+          <img src="images/Math.png" class="main-image" />
+        </div>
+        <h2>강좌 1: 수학의 정석 완전정복</h2>
+        <p>이 강좌는 수학의 기초부터 심화까지 체계적으로 학습할 수 있도록 구성되었습니다.</p>
+        <p><strong>담당 선생님:</strong> 홍길동</p>
+        <p><strong>강좌 수:</strong> 30강</p>
+        <p><strong>수강 기간:</strong> 90일</p>
+      </section>
+
+      <!-- 영어 -->
+      <section id="course-english" class="course-detail">
+        <div class="main-banner">
+          <h1>영어를 즐기자</h1>
+          <img src="images/English.png" class="main-image" />
+        </div>
+        <h2>강좌 2: 영어를 즐기자</h2>
+        <p>이 강좌는 영어와 한글의 이해를 설명하는 강의입니다.</p>
+        <p><strong>담당 선생님:</strong> Laymen</p>
+        <p><strong>강좌 수:</strong> 15강</p>
+        <p><strong>수강 기간:</strong> 45일</p>
+      </section>
+
+      <!-- 역사 -->
+      <section id="course-history" class="course-detail">
+        <div class="main-banner">
+          <h1>한국사는 최태성</h1>
+          <img src="images/History.png" class="main-image" />
+        </div>
+        <h2>강좌 3: 한국사는 최태성</h2>
+        <p>이 강좌는 한국사 유튜브 강의입니다.</p>
+        <p><strong>담당 선생님:</strong> 최태성</p>
+        <p><strong>강좌 수:</strong> 40강</p>
+        <p><strong>수강 기간:</strong> 30일</p>
+      </section>
+
+      <!-- 로그인 -->
+      <section id="login-section" class="course-detail">
+        <div class="main-banner">
+          <h1>로그인</h1>
+        </div>
+        <div class="login-container">
+          <form>
+            <input type="text" placeholder="아이디" required />
+            <input type="password" placeholder="비밀번호" required />
+            <button type="submit">로그인</button>
+          </form>
+          <a href="#main">← 메인으로 돌아가기</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer id="bottom">
+      © 2025 FAKEMegaStudy Clone. All rights reserved.<br>
+      e-mail: gustmdqlszm@hanyang.ac.kr<br>
+      Num: 010-1234-5678
+      <!-- 소셜 아이콘 -->
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="https://blog.naver.com" target="_blank"><img src="images/blog.png" alt="Blog" /></a>
+        <a href="https://play.google.com" target="_blank"><img src="images/play.png" alt="Play" /></a>
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" /></a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 왼쪽 고정 아이콘 메뉴 -->
+  <div class="side-menu">
+    <a href="http://www.grad.hanyang.ac.kr/" target="_blank">
+      <img src="images/icon1.png" alt="아이콘1">
+    </a>
+    <a href="http://www.grad.hanyang.ac.kr/" target="_blank">
+      <img src="images/icon2.png" alt="아이콘2">
+    </a>
+    <a href="http://www.grad.hanyang.ac.kr/" target="_blank">
+      <img src="images/top.png" alt="Top">
+    </a>
+    <a href="http://www.grad.hanyang.ac.kr/" target="_blank">
+      <img src="images/down.png" alt="Down">
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
